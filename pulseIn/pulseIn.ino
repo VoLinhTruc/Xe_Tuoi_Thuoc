@@ -76,7 +76,11 @@ void setup() {
     Serial.println("Earsing Done");
   }
   
-  delay(2000);
+  delay(5000);
+  while(Serial.available() > 0)
+  {
+    Serial.read();
+  }
   
 }
 
