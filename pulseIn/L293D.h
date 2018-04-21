@@ -11,6 +11,7 @@ class L293D
   public:
     L293D();
     L293D(uint8_t MA1, uint8_t MA2, uint8_t MB1, uint8_t MB2, uint8_t spd);
+    L293D(uint8_t MA1, uint8_t MA2, uint8_t MB1, uint8_t MB2);
     void begin();
     void runForward();
     void runForward(uint8_t spd);
